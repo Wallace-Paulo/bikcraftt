@@ -1,0 +1,129 @@
+.contato {
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.contato-dados {
+    border-radius: 5px 0 0 5px;
+    background: var(--cor-12) url(../../img/dec/bottom-left.svg) no-repeat bottom 20px left 20px;
+}
+
+.contato-dados, .contato-formulario {
+    padding: 60px;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 10%);
+}
+
+.contato-dados h2 {
+    margin-bottom: 60px;
+}
+
+.contato-endereco {
+    margin-bottom: 32px;
+    padding-left: 28px;
+    background: url(../../img/icones/local.svg) no-repeat 0px 2px;
+}
+
+.contato-endereco p {
+    margin-bottom: 8px;
+}
+
+.contato-meios a:first-child {
+    background: url(../../img/icones/email.svg) no-repeat 0px 2px;
+}
+
+.contato-meios a:nth-child(2) {
+    margin-bottom: 32px;
+}
+
+.contato-meios a:nth-child(4) {
+    background: url(../../img/icones/telefone.svg) no-repeat 0px 2px;
+    margin-bottom: 60px;
+}
+
+.contato-meios a {
+    display: block;
+    max-width: max-content;
+    margin-bottom: 8px;
+    padding-left: 28px;
+}
+
+.contato-redes {
+    display: flex;
+    gap: 32px;
+    padding-left: 28px;
+    margin-bottom: 32px;
+}
+
+.contato-redes img {
+    width: 32px;
+}
+
+
+.contato-formulario {
+    border-radius: 0 5px 5px 0;
+    background: var(--cor-0) url(../../img/dec/bottom-right.svg) no-repeat bottom 20px right 20px;
+}
+
+
+.lojas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 40px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.lojas h2 {
+    grid-column: 1/-1;
+    margin-bottom: 60px;
+}
+
+.lojas-item {
+    border-radius: 4px;
+    background: var(--cor-0);
+    box-shadow: 0 1px 2px rgb(0 0 0 / 10%);
+}
+
+.lojas img {
+    border-radius: 4px 4px 0 0;
+}
+
+.lojas-conteudo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px 16px;
+    padding: 32px;
+}
+
+.lojas-conteudo h3, .lojas-tempo {
+    grid-column: 1/-1;
+}
+
+.lojas-dados {
+    display: grid;
+    gap: 8px;
+    border-left: 2px solid var(--cor-2);
+    padding-left: 12px;
+}
+
+.lojas-tempo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.lojas-tempo img {
+    width: 32px;
+}
+
+@media (max-width: 800px) {
+    .contato {
+        grid-template-columns: 1fr;
+    }
+
+    .lojas {
+        grid-template-columns: 1fr;
+    }
+}
